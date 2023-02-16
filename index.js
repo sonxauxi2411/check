@@ -6,7 +6,7 @@ const cors = require("cors");
 
 app.use(
   cros({
-    origin: ["http://localhost:3000", "http://localhost:3001"],
+    origin: [process.env.URL_CUSTOM, process.env.URL_CUSTOM2],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true,
   })
