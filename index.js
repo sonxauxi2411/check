@@ -5,7 +5,7 @@ dotenv.config();
 const cors = require("cors");
 
 app.use(
-  cros({
+  cors({
     origin: [process.env.URL_CUSTOM, process.env.URL_CUSTOM2],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true,
